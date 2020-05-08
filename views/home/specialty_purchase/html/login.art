@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>特产购--登录界面</title>
+    <link rel="stylesheet" href="/home/specialty_purchase/css/login.css">
+    <script src="/home/specialty_purchase/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <form class="form" action="/admin/checklogin" method="post">
+            <div class="form__cover"></div>
+            <div class="form__loader">
+                <div class="spinner active">
+                    <svg class="spinner__circular" viewBox="25 25 50 50">
+                        <circle class="spinner__path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="form__content">
+                <h1>登陆界面</h1>
+                <div class="styled-input">
+                    <input type="text" id="phonenumber" autocomplete="off" class="styled-input__input" name="phonenumber">
+                    <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">手机号</span> </div>
+                    <div class="styled-input__circle"></div>
+                </div>
+                <div class="styled-input">
+                    <input type="password" id="password" autocomplete="off" class="styled-input__input" name="password">
+                    <div class="styled-input__placeholder"> <span class="styled-input__placeholder-text">密码</span> </div>
+                    <div class="styled-input__circle"></div>
+                </div>
+                <button type="submit" class="styled-button"> <span class="styled-button__real-text-holder"> <span class="styled-button__real-text">提交</span> <span class="styled-button__moving-block face"> <span class="styled-button__text-holder"> <span class="styled-button__text">提交</span> </span> </span><span class="styled-button__moving-block back"> <span class="styled-button__text-holder"> <span class="styled-button__text">提交</span> </span> </span> </span> </button>
+            </div>
+        </form>
+    </main>
+    <script src="/home/specialty_purchase/js/login.js"></script>
+    <script>
+        $(".form").submit(function() {
+            var result = {};
+            //返回的形式[{phonenunber:val}{password:val}]
+            var f = $(this).serializeArray();
+            //处理f数据格式，纯对象
+            f.forEach(function(item) {
+                result[item.name] = item.value;
+            });
+            // console.log(result);
+            //  开始验证是否输入手机 密码
+            if (result.password.trim().length == 0 && result.phonenumber.trim().length == 0) {
+                alert('请输入手机号和密码');
+                return false;
+            }
+            if (result.phonenumber.trim().length == 0) {
+                alert('手机号不能为空');
+                return false;
+            }
+            if (result.password.trim().length == 0) {
+                alert('密码不能为空');
+                return false;
+            }
+
+
+        });
+    </script>
+</body>
+
+</html>

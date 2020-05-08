@@ -1,0 +1,171 @@
+/*
+ * @Author: hzw 
+ * @Date: 2020-02-15 01:18:50 
+ * @Last Modified by: hzw
+ * @Last Modified time: 2020-03-06 01:25:56
+ */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 82px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+
+/* register-area */
+
+.register-area {
+    margin-top: 20px;
+    height: 520px;
+    border: 1px solid #ccc;
+}
+
+.register-area h3 {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 40px;
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.register-area h3 em {
+    float: right;
+    font-size: 14px;
+}
+
+.register-area h3 a {
+    color: #c81623;
+}
+
+.reg-form {
+    width: 600px;
+    height: 400px;
+    margin: 40px auto 0;
+}
+
+.reg-form li {
+    margin-bottom: 10px;
+}
+
+.reg-form label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.inp {
+    width: 238px;
+    height: 34px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+
+.error-icon,
+.success-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.error-icon {
+    background: url(../images/error.png) no-repeat;
+}
+
+.success-icon {
+    background: url(../images/success.png) no-repeat;
+}
+
+.error {
+    color: #df3033;
+    margin-left: 10px;
+}
+
+.success {
+    color: #40b83f;
+    margin-left: 10px;
+}
+
+.safe {
+    padding-left: 187px;
+    color: #b2b2b2;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #40b83f;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+.ruo,
+.zhong,
+.qiang {
+    opacity: 0.4;
+}
+
+.agree {
+    padding-left: 140px;
+    padding-top: 20px;
+}
+
+.agree input {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.agree a {
+    color: #1ba1e6;
+}
+
+.finish {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin: 30px 0 0 130px;
+}
+
+
+/*后期补上的 */
+
+.error_message {
+    font-size: 16px;
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 158px;
+    color: red;
+    margin-top: 15px;
+}
+
+.mod-copyright {
+    height: 50px;
+    margin: 15px 0 0 0;
+    text-align: center;
+}

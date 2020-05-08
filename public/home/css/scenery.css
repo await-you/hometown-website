@@ -1,0 +1,224 @@
+/*
+* @Author: hzw
+* @Date:   2020-01-18 20:43:07
+ * @Last Modified by: hzw
+ * @Last Modified time: 2020-04-14 02:15:19
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.head {
+    height: 180px;
+    background: url(../iamges/background.jpg) repeat center;
+}
+
+.banner {
+    margin: 3px auto;
+    text-align: center;
+}
+
+.banner a {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    font: 16px "weiruan yahei";
+    color: #fff;
+    background: url(../iamges/navbg1.png) no-repeat;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.banner a:hover {
+    background-image: url(../iamges/navbgc2.png);
+}
+
+
+/* 轮播图开始 */
+
+#box {
+    width: 640px;
+    height: 400px;
+    background-color: #ccc;
+    margin: 0 auto;
+    /* border: 1px solid red;
+	*/
+    ;
+}
+
+.ad img {
+    width: 640px;
+    height: 400px;
+}
+
+.ad {
+    width: 640px;
+    height: 400px;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+}
+
+.ad ul {
+    width: 2000%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ad ul li {
+    float: left;
+}
+
+.focus {
+    width: 640px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+.focus span {
+    z-index: 1;
+}
+
+.ad .focus img {
+    width: 24px;
+    height: 36px;
+}
+
+#left {
+    width: 24px;
+    height: 36px;
+    float: left;
+}
+
+#right {
+    width: 24px;
+    height: 36px;
+    float: right;
+}
+
+
+/* 轮播图结束 */
+
+
+/* 主体部分开始 */
+
+.main {
+    width: 100%;
+    height: 1000px;
+    /* background-color: #ccc; */
+    background: #B2FEFA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0ED2F7, #B2FEFA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0ED2F7, #B2FEFA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 3px auto;
+}
+
+.main h1 {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+/* .current{
+	width: 100%;
+	height: 1000px;
+	display: block;
+} */
+
+.left {
+    width: 50%;
+    height: 900px;
+    /* background-color: pink; */
+    margin-top: 5px;
+    float: left;
+}
+
+.left h2 {
+    text-align: center;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left li img {
+    margin-right: 10px;
+}
+
+.right {
+    width: 50%;
+    height: 900px;
+    /* background-color: orange; */
+    margin-top: 5px;
+    float: left;
+}
+
+.right p {
+    text-indent: 32px;
+}
+
+.imggallery {
+    /* overflow: hidden; */
+    width: 630px;
+    margin: 0 auto;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five {
+    width: 100%;
+    /* height: 1000px; */
+    overflow: hidden;
+    /*靠内容撑开盒子，不用设置高度*/
+    padding-top: 15px;
+    display: none;
+}
+
+#main .current {
+    display: block;
+}
+
+.more {
+    color: red;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 5px;
+}
+
+.footer a {
+    font: 16px "weiruan yahei";
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer a:hover {
+    color: red;
+}

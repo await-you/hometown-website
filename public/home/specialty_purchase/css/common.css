@@ -1,0 +1,272 @@
+/*公共样式*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style-red {
+    color: #c81623;
+}
+
+.spacer {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 10px 10px 0;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* shortcut快捷导航栏开始 */
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut li {
+    float: left;
+}
+
+
+/* shortcut end */
+
+
+/* header start */
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 175px;
+    height: 56px;
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background: url(../images/logo.jpg) no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+}
+
+.search_list {
+    position: relative;
+    top: 69px;
+    left: 348px;
+    width: 456px;
+    height: 210px;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, .9);
+    display: none;
+}
+
+.search_list_item {
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.text {
+    float: left;
+    width: 445px;
+    height: 40px;
+    border: 2px solid #b1191a;
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.btn {
+    float: left;
+    width: 82px;
+    height: 44px;
+    background-color: #b1191a;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 138px;
+    height: 40px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 40px;
+    text-align: center;
+}
+
+.car {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-weight: 700;
+    color: #da5555;
+}
+
+.arrow {
+    font-family: "iconfont" !important;
+    margin-left: 10px;
+}
+
+
+/* header end  */
+
+.underline {
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+    background-color: #F7F7F7;
+}
+
+.dropdown {
+    width: 230px;
+    height: 45px;
+    background-color: purple;
+    line-height: 45px;
+}
+
+.dropdown .dt {
+    text-align: center;
+    background-color: #bb1111;
+    font-size: 16px;
+    color: #fff;
+}
+
+.dropdown .dd {
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.menu-item {
+    height: 56px;
+    line-height: 56px;
+    margin-left: 1px;
+    text-align: center;
+    font-size: 16px;
+    transition: all .5s;
+}
+
+.menu-item:hover {
+    padding-left: 20px;
+}
+
+.menu-item a {
+    color: #fff;
+}
+
+.menu-item:hover {
+    background-color: #fff;
+}
+
+.menu-item:hover a {
+    color: #c81623;
+}
+
+
+/* footer start */
+
+.footer {
+    height: 170px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod-guarantee {
+    height: 79px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod-guarantee li {
+    float: left;
+    height: 79px;
+    width: 240px;
+}
+
+.mod-guarantee-item {
+    float: left;
+    text-align: center;
+    color: #b1191a;
+    font-weight: 700;
+    margin-left: 52px;
+}
+
+.mod-guarantee-tit {
+    float: left;
+    margin: 10px 0 0 5px;
+}
+
+.mod-guarantee-tit h5 {
+    margin: 10px 0 6px;
+}
+
+.mod-guarantee .zheng {
+    font-family: "iconfont" !important;
+    font-size: 56px;
+}
+
+.mod-guarantee .tuihuan {
+    font-family: "iconfont" !important;
+    font-size: 59px;
+}
+
+.mod-guarantee .bao {
+    font-family: "iconfont" !important;
+    font-size: 55px;
+}
+
+.mod-guarantee .pei {
+    font-family: "iconfont" !important;
+    font-size: 60px;
+}
+
+.mod-guarantee .smile {
+    font-family: "iconfont" !important;
+    font-size: 55px;
+}
+
+
+/* mod-copyright start */
+
+.mod-copyright {
+    height: 50px;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+
+/* mod-copyright end */
+
+
+/* footer end */

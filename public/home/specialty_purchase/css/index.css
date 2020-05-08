@@ -1,0 +1,158 @@
+/* 此文件是首页的样式 */
+
+.focus {
+    position: relative;
+    width: 970px;
+    height: 455px;
+    margin-left: 230px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    /* overflow: hidden; */
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    /* 定位的元素自动转换为行内块元素，可设置宽高 */
+    width: 28px;
+    height: 40px;
+    font-family: 'iconfont'!important;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.arrow-l {
+    top: 50%;
+    margin-top: -20px;
+}
+
+.arrow-r {
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, .8);
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle li.current {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/* floor start */
+
+.box-hd {
+    height: 40px;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #c81623;
+    margin-top: 25px;
+}
+
+.box-hd h3 {
+    line-height: 40px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.box-bd {
+    height: 360px;
+}
+
+.goods-item li {
+    float: left;
+    height: 360px;
+}
+
+.w210 {
+    width: 210px;
+}
+
+.w330 {
+    width: 330px;
+}
+
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+.goods-item-three {
+    border-bottom: 1px solid #ccc;
+}
+
+.box-bd li {
+    overflow: hidden;
+}
+
+.box-bd img {
+    /*过渡写到本身上， 谁做动画，给谁加*/
+    transition: all .2s;
+}
+
+
+/*我们鼠标经过图片 往右走 8px*/
+
+.box-bd img:hover {
+    margin-left: 8px;
+}
+
+
+/* floor end  */
+
+
+/* 固定电梯导航 开始*/
+
+.fixedtool {
+    display: none;
+    position: fixed;
+    top: 200px;
+    right: 50%;
+    margin-right: -676px;
+    width: 66px;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}

@@ -1,0 +1,79 @@
+{
+  "id": "1638153",
+  "name": "specialty_purchase",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "551914",
+      "name": "笑脸",
+      "font_class": "smiling",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "11520233",
+      "name": "笑脸",
+      "font_class": "xiaolian",
+      "unicode": "e75a",
+      "unicode_decimal": 59226
+    },
+    {
+      "icon_id": "12184892",
+      "name": "笑脸",
+      "font_class": "xiaolian1",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "202940",
+      "name": "service-七天退换",
+      "font_class": "serviceqitiantuihuan",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "202935",
+      "name": "service-假一赔三/五",
+      "font_class": "servicejiayipeisan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1089769",
+      "name": "购物车 ",
+      "font_class": "gouwuche1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "6234680",
+      "name": "正品保证",
+      "font_class": "zhengpinbaozheng",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "6234773",
+      "name": "包邮",
+      "font_class": "baoyou",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "8783187",
+      "name": "箭头",
+      "font_class": "dibudaohanglan-",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "12686830",
+      "name": "箭头",
+      "font_class": "icon-",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    }
+  ]
+}

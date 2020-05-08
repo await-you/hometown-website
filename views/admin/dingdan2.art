@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="特产购-石家庄特产，给您最健康的特产！" />
+    <meta name="keywords" content="特产购，赵州雪梨，藁城宫面，赞皇金丝枣" />
+    <title>特产购--购物车列表页面</title>
+    <!-- 引入网页favicon网页图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/base.css" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/common.css" />
+    <!-- 皇冠detail -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/gongmian.css">
+    <!-- <link rel="stylesheet" href="/home/specialty_purchase/css/cart-list.css"> -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/jiesuan.css">
+    <!-- 引入jquery -->
+    <script src="/home/specialty_purchase/js/jquery.min.js"></script>
+    <style>
+        .msg {
+            border: 1px solid #FF0036;
+            margin-top: 3px;
+        }
+        
+        .tijiao {
+            position: absolute;
+            top: 106px;
+            right: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- shortcut start -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>特产购欢迎您！</li>
+                    <!-- <li>
+                        <a href="/home/specialty_purchase/html/login">请登录</a>
+                        <a href="/home/specialty_purchase/html/register" class="style-red">免费注册</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="#">我的特产购</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="javascript:;" class="customer_id">{{userInfo ? userInfo._id:'未登录'}}</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- shortcut end -->
+
+
+    <!-- header start -->
+
+    <div class="car-header">
+        <div class="w">
+            <div class="car-logo">
+                <a href="/home/specialty_purchase/index"><img src="/home/specialty_purchase/images/logo.jpg" alt=""></a> <b>订单页面</b>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="message w">
+        <span class="message-title">订单信息</span>
+
+        <div class="order-head w">
+
+
+            <div class="order-goods">商品</div>
+            <div class="order-price">单价</div>
+            <div class="order-num">数量</div>
+            <div class="order-gift">赠品</div>
+            <div class="order-sum">小计</div>
+        </div>
+        {{each data}}
+        <div class="order-body">
+            <div class="order-item">
+                <div class="order-body-goods">
+                    <div class="order-body-img">
+                        <img src="{{$value.img_src}}" alt="" style="width: 80px; height: 80px;">
+                    </div>
+                    <div class="order-body-msg">{{$value.message}}</div>
+                </div>
+                <div class="order-body-price">￥{{$value.price}}</div>
+                <div class="order-body-num"> {{$value.num}}</div>
+                <div class="order-body-gift">{{$value.gift}}</div>
+                <div class="order-body-sum">￥{{$value.sum}}</div>
+
+
+
+            </div>
+        </div>
+        {{/each}}
+        <div></div>
+
+
+
+        <div class="msg">
+            <span>实付款：</span>
+            <span>￥{{data[0].final_total}}</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <span>收货地址：</span>
+            <span>{{data[0].address}}</span">
+        </div>
+
+        <div class="w tijiao">
+            <a href="/admin/delete_dingdan" class="tijiao-a">删除订单</a>
+        </div>
+    </div>
+        <!-- footer start -->
+        <div class="footer">
+            <div class="w">
+                <!-- 保证模块start -->
+                <div class="mod-guarantee">
+                    <ul>
+                        <li>
+                            <i class="mod-guarantee-item zheng">&#xe639;</i>
+                            <div class="mod-guarantee-tit">
+                                <h5>正品保证</h5>
+                                <p>绝对正宗特产</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod-guarantee-item tuihuan">&#xe603;</i>
+                            <div class="mod-guarantee-tit">
+                                <h5>七天包退</h5>
+                                <p>七天无理由退换</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod-guarantee-item bao">&#xe63e;</i>
+                            <div class="mod-guarantee-tit">
+                                <h5>全国包邮</h5>
+                                <p>满88包邮</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod-guarantee-item pei">&#xe600;</i>
+                            <div class="mod-guarantee-tit">
+                                <h5>假一赔三</h5>
+                                <p>承诺赔款</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod-guarantee-item smile">&#xe688;</i>
+                            <div class="mod-guarantee-tit">
+                                <h5>微笑服务</h5>
+                                <p>竭诚为您服务</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 保证模块end -->
+                <!-- mod_copyright start -->
+                <div class="mod-copyright">
+                    <p class="mod-copyright-info">
+                        地址：河北省石家庄市栾城区卓达太阳城阳光大道 电话：15256065722 E-mail：2239341763@qq.com
+                        <br> 京ICP备08002416号京公网安备110120119114
+                    </p>
+    
+                </div>
+                <!-- mod_copyright end -->
+    
+            </div>
+        </div>
+        <!-- footer end -->
+</body>
+
+
+
+</html>

@@ -1,0 +1,192 @@
+.address-title,
+.message-title {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    color: #333;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.address-body {
+    position: relative;
+    border-top: 2px solid red;
+    /* height: 100px; */
+    /* background-color: pink; */
+    margin-top: 5px;
+}
+
+.address-body .msg {
+    /* position: relative; */
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1px solid #B2D1FF;
+}
+
+.address-body .check {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 200px;
+    height: 37px;
+    outline: none;
+    border: none;
+    /* background-color: #ccc; */
+    background-color: rgba(204, 204, 204, 0.3);
+    line-height: 37px;
+    text-align: center;
+}
+
+.address-body .check:hover {
+    background-color: rgba(178, 209, 255, 0.3);
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.order-head {
+    /* background-color: pink; */
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 3px solid #B2D1FF;
+}
+
+.order-goods {
+    float: left;
+    width: 30%;
+}
+
+.order-price {
+    float: left;
+    width: 20%;
+}
+
+.order-num {
+    float: left;
+    width: 20%;
+}
+
+.order-gift {
+    float: left;
+    width: 20%;
+}
+
+.order-sum {
+    float: left;
+    width: 10%;
+}
+
+.order-item {
+    overflow: hidden;
+    margin-top: 10px;
+    height: 120px;
+    background-color: #FBFCFF;
+    box-sizing: border-box;
+    border: 1px solid #80B2FF;
+}
+
+.order-body-goods {
+    float: left;
+    width: 357px;
+}
+
+.order-body-img {
+    float: left;
+}
+
+.order-body-msg {
+    float: left;
+}
+
+.order-body-price {
+    float: left;
+    width: 249px;
+}
+
+.order-body-num {
+    float: left;
+    width: 233px;
+}
+
+.order-body-gift {
+    float: left;
+    width: 245px;
+}
+
+.order-body-sum {
+    float: left;
+    width: 40px;
+}
+
+.confirm {
+    position: relative;
+    width: 700px;
+    height: 132px;
+    right: 57px;
+    /* background-color: pink; */
+    margin-left: 659px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #ff0036;
+}
+
+.pay {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.peisong {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.shouhuo {
+    position: absolute;
+    top: 93px;
+    right: 67px;
+}
+
+.submit {
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+
+.pay-title,
+.peisong-title,
+.shouhuo-title {
+    font-weight: 700;
+    color: #333;
+}
+
+.pay-body {
+    color: #e54346;
+    font: 700 26px tahoma;
+}
+
+.tijiao {
+    overflow: hidden;
+}
+
+.tijiao a {
+    width: 182px;
+    height: 39px;
+    position: relative;
+    vertical-align: middle;
+    line-height: 39px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    background: #e54346;
+    color: #fff;
+    float: right;
+}

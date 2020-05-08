@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="特产购-石家庄特产，给您最健康的特产！" />
+    <meta name="keywords" content="特产购，赵州雪梨，藁城宫面，赞皇金丝枣" />
+    <title>特产购-给你最好的！</title>
+    <!-- 引入网页favicon网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/base.css" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/common.css" />
+    <link rel="stylesheet" href="/home/specialty_purchase/css/index.css">
+    <!-- 引入jquery -->
+    <script src="/home/specialty_purchase/js/jquery.min.js"></script>
+    <!-- 引入动画函数 -->
+    <script src="/home/specialty_purchase/js/animate.js"></script>
+    <!-- 引入js文件 -->
+    <script src="/home/specialty_purchase/js/index.js"></script>
+
+</head>
+
+<body>
+    <!-- shortcut start -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>特产购欢迎您！</li>
+                    <li>
+                        <a href="/home/specialty_purchase/html/login">请登录</a>
+                        <a href="/home/specialty_purchase/html/register" class="style-red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>
+                        <a href="/admin/dingdan" class="my_dingdan">我的订单</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="/home/index">家乡首页</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="/admin/outlogin">退出登录</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="javascript:;" style="color:red">{{userInfo ? userInfo.phonenumber:'未登录'}}</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- shortcut end -->
+
+    <!-- header start -->
+    <div class="header w">
+        <div class="logo">
+            <h1>
+                <a href="/home/specialty_purchase/index" title="特产购">特产购</a>
+            </h1>
+        </div>
+        <div class="search">
+            <input type="text" class="text" value="请输入搜索内容...">
+            <button class="btn">搜索</button>
+        </div>
+        <ul class="search_list" id="search_list">
+
+        </ul>
+        <div class="shopcar">
+            <a href="/admin/cart-list" class="my_cart"><i class="car">&#xe65c;</i>&nbsp;&nbsp;我的购物车<i class="arrow">&#xe62d;</i></a>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- 全部商品分类开始 -->
+    <div class="underline">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">全部商品分类</div>
+                <div class="dd">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/jinsizao_detail">赞皇金丝枣</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/gongmian_detail">藁城宫面</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/luji_detail">正定马家卤鸡</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/hetao_detail">平山绵核桃</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/xiangchun_detail">鹿泉香椿</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/xigua_detail">新乐西瓜</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/shizi_detail">元氏大红袍柿子</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/yali_detail">晋州鸭梨</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 全部商品分类结束 -->
+    <!-- main start -->
+    <div class="main w">
+        <div class="focus">
+            <a href="javascript:;" class="arrow-l">&#xe64d;</a>
+            <a href="javascript:;" class="arrow-r">&#xe62d;</a>
+            <ul>
+                <li class="current">
+                    <a href="javascript:;"><img src="/home/specialty_purchase/upload/honey.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/home/specialty_purchase/upload/hetao.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/home/specialty_purchase/upload/hongzao.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/home/specialty_purchase/upload/xigua.jpg" alt=""></a>
+                </li>
+
+            </ul>
+            <ol class="circle">
+
+            </ol>
+        </div>
+    </div>
+    <!-- main end -->
+
+    <!-- floor start -->
+    <div class="floor">
+        <div class="zhaozhou w">
+            <div class="box-hd">
+                <h3>赵州专卖</h3>
+            </div>
+            <div class="box-bd">
+                <ul class="goods-item">
+                    <li class="w210">
+                        <a href="/home/specialty_purchase/html/qiuligao_detail"><img src="/home/specialty_purchase/upload/ligao.jpg" alt=""></a>
+                    </li>
+                    <li class="w330">
+                        <a href="/home/specialty_purchase/html/huangguan_detail"><img src="/home/specialty_purchase/upload/huangguan.jpg" alt=""></a>
+                    </li>
+                    <li class="w219">
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/xueligan_detail"><img src="/home/specialty_purchase/upload/ligan.jpg" alt=""></a>
+                        </div>
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/lvrou_detail"><img src="/home/specialty_purchase/upload/lvrou.jpg" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="w219 goods-item-three">
+                        <a href="/home/specialty_purchase/html/xuelizhi_detail"><img src="/home/specialty_purchase/upload/xuelizhi.jpg" alt=""></a>
+                    </li>
+                    <li class="w219">
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/xuehuali_detail"><img src="/home/specialty_purchase/upload/xueli.jpg" alt=""></a>
+                        </div>
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/shaobing_detail"><img src="/home/specialty_purchase/upload/shaobing.jpg" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="folk-custom w">
+            <div class="box-hd">
+                <h3>民间工艺了解</h3>
+            </div>
+            <div class="box-bd">
+                <ul class="goods-item">
+                    <li class="w210">
+                        <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/jiegan.jpg" alt=""></a>
+                    </li>
+                    <li class="w330">
+                        <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/gongdeng.jpg" alt=""></a>
+                    </li>
+                    <li class="w219">
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/fudiao.jpg" alt=""></a>
+                        </div>
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/tubu.jpg" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="w219 goods-item-three">
+                        <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/jianzhi.jpg" alt=""></a>
+                    </li>
+                    <li class="w219">
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/zhangu.jpg" alt=""></a>
+                        </div>
+                        <div class="goods-item-three">
+                            <a href="/home/specialty_purchase/html/folk"><img src="/home/specialty_purchase/upload/lahua.jpg" alt=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- floor end -->
+    <!-- 固定电梯导航 开始-->
+    <div class="fixedtool">
+        <ul>
+            <li class="current back">返回顶部</li>
+            <li class="sold">赵州专卖</li>
+            <li class="folk-art">民间工艺</li>
+            <li class="goBottom">去到底部</li>
+        </ul>
+    </div>
+    <!-- 固定电梯导航 结束-->
+    <!-- footer start -->
+    <div class="footer">
+        <div class="w">
+            <!-- 保证模块start -->
+            <div class="mod-guarantee">
+                <ul>
+                    <li>
+                        <i class="mod-guarantee-item zheng">&#xe639;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>正品保证</h5>
+                            <p>绝对正宗特产</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item tuihuan">&#xe603;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>七天包退</h5>
+                            <p>七天无理由退换</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item bao">&#xe63e;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>全国包邮</h5>
+                            <p>满88包邮</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item pei">&#xe600;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>假一赔三</h5>
+                            <p>承诺赔款</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item smile">&#xe688;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>微笑服务</h5>
+                            <p>竭诚为您服务</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 保证模块end -->
+            <!-- mod_copyright start -->
+            <div class="mod-copyright">
+                <p class="mod-copyright-info">
+                    地址：河北省石家庄市栾城区卓达太阳城阳光大道 电话：15256065722 E-mail：2239341763@qq.com
+                    <br> 京ICP备08002416号京公网安备110120119114
+                </p>
+
+            </div>
+            <!-- mod_copyright end -->
+
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+<!-- 引入封装好的ajax函数 -->
+<script src="/home/specialty_purchase/js/ajax.js"></script>
+<!-- 引入模板文件 -->
+<script src="/home/specialty_purchase/js/template-web.js"></script>
+<!-- 书写模板 -->
+<script type="text/html" id="tpl">
+    <!-- {{each result}}
+    <li class="search_list_item">{{$value.name}}</li>
+    {{/each}} -->
+
+    <!-- 此处困扰三个小时，是因为模板引擎语法冲突 -->
+    <% for(var i = 0; i < result.length; i++){ %>
+
+        <li class="search_list_item">
+            <a href="javascript:;" class="search_list_item_a">
+                <%= result[i].name %>
+            </a>
+        </li>
+        <% } %>
+</script>
+<script src="/home/specialty_purchase/js/search.js">
+</script>
+<script>
+    $(function() {
+        //未登录时，不能查看订单
+        $(".my_dingdan").click(function() {
+            $.ajax({
+                type: 'post',
+                url: '/admin/my_dingdan',
+                success: function(response) {
+                    if (response == 0) {
+                        alert("亲，登陆后才能查看订单哦！")
+                        return false;
+                    } else {
+
+                    }
+
+                }
+            });
+
+
+        });
+        //未登录时，不能查看购物车
+        $(".my_cart").click(function() {
+            $.ajax({
+                type: 'post',
+                url: '/admin/my_cart',
+                success: function(response) {
+                    if (response == 0) {
+                        alert("亲，登陆后才能查看购物车哦！")
+                        return false;
+                    } else {
+
+                    }
+
+                }
+            });
+        });
+    });
+</script>
+
+</html>

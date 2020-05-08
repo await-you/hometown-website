@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>家乡历史</title>
+    <link rel="stylesheet" href="/home/css/history.css">
+
+
+</head>
+
+<body>
+    <div class="head"></div>
+    <!-- 导航栏开始 -->
+    <div class="banner">
+        <a href="/home/index">首页</a>
+        <a href="/home/history" id="history">家乡历史</a>
+        <a href="/home/scenery">家乡美景</a>
+        <a href="/home/famous">家乡名人</a>
+        <!-- <a href="bulid.html">家乡建筑</a> -->
+        <a href="/home/zhaozhou">聚焦赵州</a>
+        <a href="/home/specialty_purchase/index">特产商城</a>
+    </div>
+
+    <div class="item_box box10">
+        <!-- <div class="item_box_wp"> -->
+        <div class="voice_2">
+            <ul>
+                <li class="li1" id="li1">
+                    <div class="fold" style="display:none;">
+                        <span class="txt">早期人类</span>
+                    </div>
+                    <div class="unfold" style="display:block">
+                        <dl>
+                            <dt><img src="/home/iamges/early_human.jpg" alt="" style="width: 500px; height: 300px;"></dt>
+                            <dd>
+                                <b>早期人类</b>
+                            </dd>
+                            <dd class="info">河北地区历史悠久，在河北全省各地，遍布着早期人类的遗址，远在200多万年以前，就繁衍、生息着古老的人类，河北地区经历了原始人群、母系氏族社会、父系氏族社会诸阶段。 河北省是中国一个古老的文明发源地，据说当年伏羲就是在邢台一带生活，黄帝曾在涿鹿大战蚩尤。这里也留下了远古先皇尧、舜、禹的足迹。 </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li2">
+                    <div class="fold">
+
+                        <span class="txt">先秦时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/early_qin.jpg" style="width: 270px; height: 150px;"/></dt>
+                            <dd>
+                                <b>先秦时期</b>
+                            </dd>
+                            <dd class="info">中国有确切纪年的朝代是公元前21世纪开始的夏朝。夏朝之后是商朝，商朝曾在今河北邢台西南部建都。公元前11世纪中期，周武王灭商，建立了新的王朝——周朝。中国行政区划的历史，有文献可查的，是从周朝开始的。周朝分为西周和东周，从公元前770年周平王将国都迁至洛邑（今河南省洛阳市）始称为东周。东周又分春秋和战国两个时代。西周时期，广置封国。到了东周春秋时代（公元前770至前476年），奴隶制行将解体，封建制孕育待生，王权衰落，邦国林立，诸侯国有一百多个。
+                                春秋时期河北省北部属于燕国，南部属于赵国和魏国。保定市是当时的燕赵分界线，在保定市中心原存有“燕赵分界石”。当年燕国太子丹送别荆轲去刺秦王就是在燕国国界易水河分别，易县的易水旁尚有古迹荆轲塔。邯郸曾是赵国都城，现存有赵武灵王修建的“丛台”，市中还存在传说中赵国丞相蔺相如为避免和老将廉颇争执而让路的“回车巷”。
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li3">
+                    <div class="fold">
+
+                        <span class="txt">秦汉时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/qinhan.jpg" style="width: 500px; height: 300px;"/></dt>
+                            <dd>
+                                <b>秦汉时期</b>
+                            </dd>
+                            <dd class="info">公元前221年，秦始皇统一中国后，实行郡县制，分全国为三十六郡，后增至四十郡，其中在河北境内陆续设置了上谷、渔阳、右北平、广阳、邯郸、巨鹿、代、恒山等八郡。汉朝，分全国为十三刺史部（又称十三州），河北北部主要属幽州刺史部，中南部属冀州刺史部，张家口地区北部为匈奴、乌桓活动的地区。曹操曾在漳河畔修建“铜雀台”，命其子曹植作名篇《铜雀台赋》。汉代以后，幽州、冀州作为地方最高一级行政区划，在河北境内，历魏、晋、南北朝而不改。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li4">
+                    <div class="fold">
+
+                        <span class="txt">隋唐时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/suitang.png" /></dt>
+                            <dd>
+                                <b>隋唐时期</b>
+                            </dd>
+                            <dd class="info">隋朝统一中国以后，文帝废郡置州，以州直接辖县。到炀帝时，又更州为郡，以郡统县。郡治在河北的有北平、恒山等14郡。从隋朝始，冀州、幽州作为一级政区之名消失于史籍。 唐朝初年，以山河大势将全国分为十道。今河北辖域主要为河北道，小部分属河东道和关内道。“河北”一词在两千多年前的西汉时就出现了，但作为大行政区的名称是从唐太宗贞观元年（公元627年）并省分道后才出现的。 安禄山曾任河北节度史，就是从这里起兵反唐。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li5">
+                    <div class="fold">
+
+                        <span class="txt">五代十国</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/wudaishiguo.jpg" /></dt>
+                            <dd>
+                                <b>五代十国</b>
+                            </dd>
+                            <dd class="info">唐朝灭亡以后，形成“五代十国”。当时河北境内的中南部，先后为梁、唐、晋、汉、周之属地，北部则主要为契丹辽政权。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li6">
+                    <div class="fold">
+
+                        <span class="txt">宋元时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/songyuan.jpg" /></dt>
+                            <dd>
+                                <b>宋元时期</b>
+                            </dd>
+                            <dd class="info">宋朝初年，曾将全国划分为十五路，河北被分为河北东路和河北西路。北部属于辽国，是两国经常交战的地方。后来又分为河北东路和河北西路两个行政区。在世界各地博物馆享有盛名的辽代瓷大罗汉像就是从易县的山洞中被外国人盗走的。林冲曾被发配沧州，卢俊义是大名府人。元朝实行行省制度，位于元朝大都（今北京）附近的今河北大部为“腹里”地区，归中央中书省直辖。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li7">
+                    <div class="fold">
+
+                        <span class="txt">明清时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/mingqing.png" style="width: 500px; height: 300px;"/></dt>
+                            <dd>
+                                <b>明清时期</b>
+                            </dd>
+                            <dd class="info">明朝初年，建都应天府（今江苏省南京市），今河北大部为北直隶省，明永乐十九年（公元1421年）迁都顺天府（今北京），改北京为京师，今河北省大部分地区归京师管辖。明代天津开始设县，徐光启开始将南方的稻向河北沿海移植。清朝继续实行行省制度，河北为直隶省。河北仍为中央直辖。唐山修建了中国第一条铁路，第一座现代化煤矿。京张铁路是北京通往张家口的铁路，是第一条中国人自己设计施工的铁路，总工程师詹天佑有许多发明被世界各国铁路采用。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li8">
+                    <div class="fold">
+
+                        <span class="txt">近代时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/jindai.jpg" style="width: 500px; height: 300px;"/></dt>
+                            <dd>
+                                <b>近代时期</b>
+                            </dd>
+                            <dd class="info">中华民国成立后，当时国民政府建都南京，今河北境域主要属直隶省，后因直隶省名不符实，于1928年改为河北省今名。中华民国时被分为察哈尔、热河、河北三省，河北省省会设在保定，现存有当时的都督府遗址。 </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="li9">
+                    <div class="fold">
+
+                        <span class="txt">新中国时期</span>
+                    </div>
+                    <div class="unfold">
+                        <dl>
+                            <dt><img src="/home/iamges/xinzhongguo.jpg" style="width: 500px; height: 300px;"/></dt>
+                            <dd>
+                                <b>新中国时期</b>
+                            </dd>
+                            <dd class="info">1949年，中华人民共和国成立后，仍为河北省。后来将原察哈尔、热河省的一部分并入河北省，省会设在保定，1952年撤销平原省，将武安、涉县、临漳三县划归河北省，同年还撤销察哈尔省，将其原察南、察北两个专区划归河北省；1956年撤销热河省，将其原大部分辖区划归河北省。1958年天津市并入河北省，省会迁往天津。1966年天津升为直辖市，省会迁回保定。文化大革命期间保定局势混乱，省会于1968年迁到石家庄市。1973年，将河北省的蓟县、宝坻、武清、静海、宁河等五县划归天津市。至此，形成河北省的辖区规模。</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- </div> -->
+    </div>
+
+</body>
+<script src="/home/js/current_a.js "></script>
+<script src="/home/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+<script>
+    $(function() {
+        $(".voice_2 ul li").each(function() {
+            var fold = $(this).find(".fold");
+            var unfold = $(this).find(".unfold");
+            if (fold.is(":hidden")) {
+                $(this).width(680);
+            } else {
+                $(this).width(90);
+            }
+        })
+        $(".voice_2 ul li").click(function() {
+            var li_index = $(this).index();
+            $(this).animate({
+                width: 680
+            }, 200);
+            $(this).find(".unfold").show();
+            $(this).find(".fold").hide();
+            $(this).siblings().animate({
+                width: 90
+            }, 200);
+            $(this).siblings().find(".unfold").hide();
+            $(this).siblings().find(".fold").show();
+        })
+    })
+</script>
+
+
+
+</html>

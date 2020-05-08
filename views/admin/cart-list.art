@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="特产购-石家庄特产，给您最健康的特产！" />
+    <meta name="keywords" content="特产购，赵州雪梨，藁城宫面，赞皇金丝枣" />
+    <title>特产购--购物车列表页面</title>
+    <!-- 引入网页favicon网页图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/base.css" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/common.css" />
+    <!-- 皇冠detail -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/gongmian.css">
+    <link rel="stylesheet" href="/home/specialty_purchase/css/cart-list.css">
+    <!-- 引入jquery -->
+    <script src="/home/specialty_purchase/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- shortcut start -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>特产购欢迎您！</li>
+                    <li>
+                        <a href="/home/specialty_purchase/html/login">请登录</a>
+                        <a href="/home/specialty_purchase/html/register" class="style-red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="#">我的特产购</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="javascript:;" class="customer_id">{{userInfo ? userInfo._id:'未登录'}}</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- shortcut end -->
+
+
+    <!-- header start -->
+    <!-- <div class="header w">
+        <div class="logo">
+            <h1>
+                <a href="/home/specialty_purchase/index" title="特产购">特产购</a>
+                <b>购物车</b>
+            </h1>
+        </div> -->
+    <div class="car-header">
+        <div class="w">
+            <div class="car-logo">
+                <a href="/home/specialty_purchase/index"><img src="/home/specialty_purchase/images/logo.jpg" alt=""></a> <b>购物车</b>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="search">
+            <input type="text" class="text" value="请输入搜索内容...">
+            <button class="btn">搜索</button>
+        </div> -->
+    <!-- <div class="shopcar">
+            <i class="car">&#xe65c;</i>&nbsp;&nbsp;我的购物车<i class="arrow">&#xe62d;</i>
+        </div> -->
+    </div>
+    <!-- header end -->
+
+    <div class="c-container">
+        <div class="w">
+            <div class="cart-filter-bar">
+                <em>全部商品</em>
+            </div>
+            <!-- 购物车主要核心区域 -->
+            <div class="cart-warp">
+                <!-- 头部全选模块 -->
+                <div class="cart-thead">
+                    <div class="t-checkbox">
+                        <input type="checkbox" name="" id="" class="checkall"> 全选
+                    </div>
+                    <!-- <div class="t-id">id</div> -->
+                    <div class="t-goods">商品</div>
+                    <div class="t-price">单价</div>
+                    <div class="t-num">数量</div>
+                    <div class="t-gift">赠品</div>
+                    <div class="t-sum">小计</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <!-- 商品详细模块 -->
+                <div class="cart-item-list">
+                    {{each goods}}
+                    <div class="cart-item">
+
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="{{$value.img_src}}" alt="" style="width: 80px; height: 80px;">
+                            </div>
+                            <div class="p-msg">{{$value.message}}</div>
+                        </div>
+                        <div class="p-price">￥{{$value.price}}</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="{{$value.num}}">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-gift">{{$value.gift}}</div>
+                        <div class="p-sum">￥{{$value.sum}}</div>
+
+                        <div class="p-action"><a href="javascript:;" class="delete_one">删除</a></div>
+
+                    </div>
+                    {{/each}}
+
+                </div>
+
+                <!-- 结算模块 -->
+                <div class="cart-floatbar">
+                    <div class="select-all">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:;" class="remove-batch"> 删除选中的商品</a>
+                        <a href="javascript:;" class="clear-all">清理购物车</a>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="amount-sum">已经选<em></em>件商品</div>
+                        <div class="price-sum">总价： <em></em></div>
+                        <a href="/admin/jiesuan">
+                            <div class="btn-area" style="cursor: pointer;">去结算</div>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="w">
+            <!-- 保证模块start -->
+            <div class="mod-guarantee">
+                <ul>
+                    <li>
+                        <i class="mod-guarantee-item zheng">&#xe639;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>正品保证</h5>
+                            <p>绝对正宗特产</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item tuihuan">&#xe603;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>七天包退</h5>
+                            <p>七天无理由退换</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item bao">&#xe63e;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>全国包邮</h5>
+                            <p>满88包邮</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item pei">&#xe600;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>假一赔三</h5>
+                            <p>承诺赔款</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item smile">&#xe688;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>微笑服务</h5>
+                            <p>竭诚为您服务</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 保证模块end -->
+            <!-- mod_copyright start -->
+            <div class="mod-copyright">
+                <p class="mod-copyright-info">
+                    地址：河北省石家庄市栾城区卓达太阳城阳光大道 电话：15256065722 E-mail：2239341763@qq.com
+                    <br> 京ICP备08002416号京公网安备110120119114
+                </p>
+
+            </div>
+            <!-- mod_copyright end -->
+
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+
+<script>
+    $(function() { //页面加载函数
+        //1.全选和全不选功能
+        // 实现思路，就是把全选按钮（checkall）的状态值复制给下面的商品的选中按钮（j-checkbox）
+        $(".checkall").change(function() {
+            // $(this).prop("checked");
+            //console.log($(this).prop("checked"))
+            //prop设置或者获取属性
+            $(".j-checkbox, .checkall").prop("checked", $(this).prop("checked"));
+
+            if ($(this).prop("checked")) { //全选按钮被点击了
+                //让所有商品添加背景颜色+类选择器
+                $(".cart-item").addClass("check-cart-item");
+            } else { //移除
+                $(".cart-item").removeClass("check-cart-item");
+            }
+        })
+
+        //2.所有的商品复选框被选中了，就让全选按钮也选中
+        $(".j-checkbox").change(function() {
+            //被点击的商品的个数==所有商品的个数
+            if ($(".j-checkbox:checked").length == $(".j-checkbox").length) {
+                $(".checkall").prop("checked", true);
+            } else {
+                $(".checkall").prop("checked", false);
+            }
+            if ($(this).prop("checked")) { //单个商品按钮被点击了
+                //让所有商品添加背景颜色+类选择器
+                $(this).parents(".cart-item").addClass("check-cart-item");
+            } else { //移除
+                $(this).parents(".cart-item").removeClass("check-cart-item");
+            }
+        });
+
+        //3.商品数量增减
+        //先获取当前文本框的值，然后点击+ - 时，只改变当前兄弟的值
+        //+
+        $(".increment").click(function() {
+            //获取当前兄弟文本框的值
+            var n = $(this).siblings(".itxt").val();
+            //console.log(n)
+            n++;
+            $(this).siblings(".itxt").val(n);
+
+            //修改当前商品的小计--点击加号时候
+            //商品单价--parents()//返回祖先元素
+            var price = $(this).parents(".p-num").siblings(".p-price").html();
+            price = parseInt((price.substr(1)));
+
+            //console.log(price);
+            var sum = price * n;
+            sum = sum.toFixed(2);
+            //当前商品小计
+            $(this).parents(".p-num").siblings(".p-sum").html("￥" + sum);
+
+            //总件数+总额
+            getSum();
+
+            //发送购物车中商品修改后的数据
+            var tatal = $(".price-sum em").text().substr(1);
+            var img = $(this).parents(".p-num").siblings(".p-goods").children(".p-img").children("img");
+            //console.log(img.prop("src"));
+            var src = img.prop("src");
+            var data = {
+                src: src,
+                num: n,
+                sum: sum,
+                total: tatal
+            };
+            $.ajax({
+                type: 'post',
+                url: '/admin/add_alter',
+                data: JSON.stringify(data),
+
+                contentType: "application/json",
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        });
+
+        //-
+        $(".decrement").click(function() {
+            var n = $(this).siblings(".itxt").val();
+            //判断在前，否则无效
+            if (n == 1) {
+                return false;
+            }
+            n--;
+            $(this).siblings(".itxt").val(n);
+            //修改当前商品的小计--点击减号时候
+            var price = $(this).parents(".p-num").siblings(".p-price").html();
+            price = parseInt((price.substr(1)));
+
+            //console.log(price);
+            var sum = price * n;
+            sum = sum.toFixed(2); //保留两位小数
+            //当前商品小计
+            $(this).parents(".p-num").siblings(".p-sum").html("￥" + sum);
+
+            //总件数+总额
+            getSum();
+
+            //发送购物车中商品修改后的数据
+            var tatal = $(".price-sum em").text().substr(1);
+            var img = $(this).parents(".p-num").siblings(".p-goods").children(".p-img").children("img");
+            //console.log(img.prop("src"));
+            var src = img.prop("src");
+            var data = {
+                src: src,
+                num: n,
+                sum: sum,
+                total: tatal
+            };
+            $.ajax({
+                type: 'post',
+                url: '/admin/reduce_alter',
+                data: JSON.stringify(data),
+
+                contentType: "application/json",
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        });
+        //用户直接在里面输入值，不能<1,如果小于，自动修改成 1 
+        // $(".itxt").blur(function() {
+        //     if ($(".itxt").val() < 1) {
+        //         $(this).val(1);
+        //     }
+        // });
+
+        //4.用户直接修改文本框数量的值，当前商品小计
+        $(".itxt").change(function() {
+            //数量
+            var n = $(this).val();
+            console.log(n);
+            //如果用户输入负数，自动修改成1
+            if (n >= 1) {
+                //$(this).val(1);
+                //单价
+                var price = $(this).parents(".p-num").siblings(".p-price").html();
+                price = price.substr(1);
+                //小计
+                var sum = price * n;
+                sum = sum.toFixed(2); //保留两位小数
+                //当前商品小计
+                $(this).parents(".p-num").siblings(".p-sum").html("￥" + sum);
+
+                //总件数+总额
+                getSum();
+
+                //发送购物车中商品修改后的数据
+                var tatal = $(".price-sum em").text().substr(1);
+                var img = $(this).parents(".p-num").siblings(".p-goods").children(".p-img").children("img");
+                //console.log(img.prop("src"));
+                var src = img.prop("src");
+                var data = {
+                    src: src,
+                    num: n,
+                    sum: sum,
+                    total: tatal
+                };
+                $.ajax({
+                    type: 'post',
+                    url: '/admin/input_alter',
+                    data: JSON.stringify(data),
+
+                    contentType: "application/json",
+                    success: function(response) {
+                        console.log(response);
+                    }
+                });
+            } else {
+                $(this).val(1);
+                var n = $(this).val();
+                var price = $(this).parents(".p-num").siblings(".p-price").html();
+                price = price.substr(1);
+                //小计
+                var sum = price * n;
+                sum = sum.toFixed(2); //保留两位小数
+                //当前商品小计
+                $(this).parents(".p-num").siblings(".p-sum").html("￥" + sum);
+
+                //总件数+总额
+                getSum();
+            }
+
+
+        });
+
+        //5.商品总件数和总额
+        getSum(); //商品参数为修改前总件数和总额
+
+        function getSum() {
+            var count = 0; //总件数变量
+            var total = 0; //总额变量
+            //循环获取
+            //(1)总件数
+            $(".itxt").each(function(index, ele) {
+                //注意：ele是DOM类型，在jquery中要转成$
+                //总件数
+                count += parseInt($(ele).val());
+
+            });
+            $(".amount-sum em").text(count);
+            //(2)总额
+            $(".p-sum").each(function(index, ele) {
+                total += parseFloat($(ele).text().substr(1));
+            });
+            $(".price-sum em").text("￥" + total.toFixed(2));
+
+        }
+        //6.删除商品
+        // (1)商品后面的删除按钮
+        $(".p-action a").click(function() {
+            $(this).parents(".cart-item").remove();
+            getSum();
+        });
+        // (2)删除选中的商品
+        $(".remove-batch").click(function() {
+            $(".j-checkbox:checked").parents(".cart-item").remove();
+            //删除后，重新结算商品的总数和总额
+            getSum();
+        });
+        // (3)清理购物车
+        $(".clear-all").click(function() {
+            $(".cart-item").remove();
+            getSum();
+        });
+
+
+        //7.删除单个商品
+        $(".delete_one").on("click", function() {
+            var customer_id = $(".customer_id").html();
+            customer_id = customer_id.substr(1, customer_id.length - 2);
+            console.log(customer_id)
+            var img = $(this).parents(".cart-item").children(".p-goods").children(".p-img").children("img");
+            var src = img.attr("src");
+            //console.log(img)
+            //console.log(src)
+
+            $.ajax({
+                type: 'post',
+                url: '/admin/delete_one',
+                data: {
+                    customer_id: customer_id,
+                    src: src
+                },
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        });
+
+        //8.删除所有商品
+        $(".clear-all").on("click", function() {
+            var customer_id = $(".customer_id").html();
+            customer_id = customer_id.substr(1, customer_id.length - 2);
+            $.ajax({
+                type: 'post',
+                url: '/admin/clear_all',
+                data: {
+                    customer_id: customer_id,
+                },
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        })
+
+    });
+
+    //9.删除选中商品
+    $(".remove-batch").on("click", function() {
+        var customer_id = $(".customer_id").html();
+        customer_id = customer_id.substr(1, customer_id.length - 2);
+        //获取选中的商品的img标签
+        var src = [];
+        var img = $(".j-checkbox:checked").parent().siblings(".p-goods").children(".p-img").children("img");
+        //把src循环出来，加到数组
+        $.each(img, function(index, ele) {
+                async function getSrc() {
+                    await src.push($(ele).prop("src"));
+                    return src;
+                }
+                getSrc()
+
+            })
+            //数组转对象
+        var srcObj = Object.assign({}, src);
+        //console.log(srcObj);
+        var data = {
+            customer_id: customer_id,
+            src: srcObj
+        };
+
+        $.ajax({
+            type: 'post',
+            url: '/admin/delete_checked',
+            data: JSON.stringify(data),
+
+            contentType: "application/json",
+            success: function(response) {
+                console.log(response);
+            }
+        });
+
+
+    });
+
+    //10.如果购物车没有商品，提示添加商品，阻止默认链接跳转
+
+    $(".btn-area").on("click", function() {
+        //console.log($(".j-checkbox:checked").length);
+        var reg = $(".price-sum em").text();
+        reg = parseFloat(reg.substr(1));
+
+        if (!reg) {
+            alert('亲，请添加商品哦！');
+            return false;
+        }
+
+    });
+
+    //10.订单
+</script>
+
+
+</html>

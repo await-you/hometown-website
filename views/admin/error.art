@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            height: 40px;
+            line-height: 40px;
+            background-color: #ccc;
+            text-align: center;
+            font-weight: 700;
+            margin-top: 300px;
+            color: blanchedalmondbl;
+        }
+        
+        #timer {
+            color: orangered;
+            margin: 0 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>手机号或密码错误！<span id="timer">3</span>秒后重新跳转到登陆界面</p>
+</body>
+<script>
+    var timer = document.getElementById('timer');
+    var second = timer.innerText;
+    // console.log(second);
+    setInterval(function() {
+        if (second > 0) {
+            second--;
+            timer.innerText = second;
+        }
+        if (timer.innerText == 0) {
+            //写此处代码总是出问题，忽略了node中的定时器是异步函数，执行顺序不一样，导致一提交直接又跳转到登录页面，无限循环
+            location.href = "/home/specialty_purchase/html/login";
+        }
+    }, 1000);
+</script>
+
+</html>

@@ -1,0 +1,348 @@
+/*
+* @Author: hzw
+* @Date:   2020-01-07 11:11:07
+ * @Last Modified by: hzw
+ * @Last Modified time: 2020-04-18 17:54:58
+*/
+
+
+/* CSS Document */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* body {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 微软雅黑;
+    background: rgb(122, 119, 119);
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: arial, "hiragino sans gb", "microsoft yahei", "Simsun", sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+input[type='button'],
+input[type='submit'],
+select,
+button {
+    cursor: pointer;
+}
+
+table {
+    border-spacing: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+q:before,
+q:after {
+    content: "";
+}
+
+abbr,
+acronym {
+    border: 0 none;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+fieldset,
+img,
+a img,
+iframe {
+    border-style: none;
+    border-width: 0;
+}
+
+img {
+    vertical-align: middle;
+    vertical-align: middle;
+    outline: none;
+}
+
+textarea {
+    overflow-y: auto;
+}
+
+legend {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #298ff8;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+hr {
+    height: 0;
+}
+
+
+/* 最外层盒子 */
+
+.box10 {
+    background: #fff;
+    padding: 30px 0;
+    height: 1000px;
+}
+
+.voice_2 {
+    width: 1400px;
+    position: relative;
+    left: 50%;
+    margin-left: -700px;
+}
+
+.voice_2 ul li {
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.head {
+    height: 180px;
+    background: url(../iamges/background.jpg) repeat center;
+}
+
+.banner {
+    margin: 3px auto;
+    text-align: center;
+}
+
+.banner a {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    font: 16px "weiruan yahei";
+    color: #fff;
+    background: url(../iamges/navbg1.png) no-repeat;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.banner a:hover {
+    background-image: url(../iamges/navbgc2.png);
+}
+
+
+/* 设置每li 的背景颜色和高度 */
+
+.box10 {
+    /* background: #404344; */
+    padding: 30px 0;
+    height: 760px;
+}
+
+.voice_2 ul li.li1 {
+    height: 750px;
+    background: #4a9ebd;
+}
+
+.voice_2 ul li.li2 {
+    height: 750px;
+    background: #4abdb9;
+}
+
+.voice_2 ul li.li3 {
+    height: 750px;
+    background: #90d73d;
+}
+
+.voice_2 ul li.li4 {
+    height: 750px;
+    background: #e3d02c;
+}
+
+.voice_2 ul li.li5 {
+    height: 750px;
+    background: #e37e2c;
+}
+
+.voice_2 ul li.li6 {
+    height: 750px;
+    background: #16DB93;
+}
+
+.voice_2 ul li.li7 {
+    height: 750px;
+    background: #F8BE4D;
+}
+
+.voice_2 ul li.li8 {
+    height: 750px;
+    background: #F25454;
+}
+
+.voice_2 ul li.li9 {
+    height: 750px;
+    background: #68C2C2;
+}
+
+
+/* 合起来后li盒子 */
+
+.voice_2 .fold {
+    /* box-sizing: content-box; */
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* padding: 300px 0; */
+}
+
+
+/* 合起来后，标题设置 */
+
+.voice_2 .fold .txt {
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    width: 25px;
+    font-weight: normal;
+    margin: 300px 38px;
+    line-height: 25px;
+}
+
+
+/* 展开后最大盒子 */
+
+.voice_2 .unfold {
+    width: 680px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* 展开后自定义列表 外边距*/
+
+.voice_2 .unfold dl {
+    margin: 50px 60px 0px 60px;
+}
+
+
+/* 图片 */
+
+.voice_2 .unfold dt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* 展开后文字格式 */
+
+.voice_2 .unfold dd {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+
+/* 展开后标题 */
+
+.voice_2 .unfold dd b {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
+/* 展示信息首行缩进 */
+
+.info {
+    text-indent: 2em;
+}

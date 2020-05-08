@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>聚焦赵州</title>
+    <link rel="stylesheet" href="/home/css/zhaozhou.css">
+    <link rel="stylesheet" type="text/css" href="/home/css/bootstrap-grid.min.css" />
+
+</head>
+
+<body>
+    <!-- 头部背景开始 -->
+    <div class="head"></div>
+    <!-- 导航栏开始 -->
+    <div class="banner">
+        <a href="/home/index">首页</a>
+        <a href="/home/history">家乡历史</a>
+        <a href="/home/scenery">家乡美景</a>
+        <a href="/home/famous">家乡名人</a>
+        <!-- <a href="bulid.html">家乡建筑</a> -->
+        <a href="/home/zhaozhou" id="zhaozhou">聚焦赵州</a>
+        <a href="/home/specialty_purchase/index">特产商城</a>
+    </div>
+    <!-- 轮播图开始 -->
+    <div class="wrap" id="wrap">
+        <div class="slide" id="slide">
+            <ul>
+                <li><img src="/home/iamges/paifang.jpg" title="赵州牌坊" alt=""></li>
+                <li><img src="/home/iamges/bailinsi.jpg" title="柏林禅寺" alt=""></li>
+                <li><img src="/home/iamges/zhaozhouqiao.jpg" title="赵州桥" alt=""></li>
+                <li><img src="/home/iamges/xueli.jpg" title="雪花梨" alt=""></li>
+                <li><img src="/home/iamges/lihua.jpg" title="万亩梨花" alt=""></li>
+            </ul>
+            <div class="arrow" id="arrow">
+                <a href="javascript:void(0);" class="prev" id="arrLeft"></a>
+                <a href="javascript:void(0);" class="next" id="arrRight"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 瀑布流 -->
+    <div class="drag_div" id="drag_div">
+        <div class="one">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/shaobing.jpg"></p>
+            <p class="text_center">石塔薛家烧饼</p>
+        </div>
+        <div class="two">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/yangza.jpg"></p>
+            <p class="text_center">羊杂汤</p>
+        </div>
+        <div class="three">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/zhiliao.jpg"></p>
+            <p class="text_center">梨园金蝉</p>
+        </div>
+        <div class="four">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/shita.jpeg"></p>
+            <p class="text_center">陀罗尼经幢</p>
+        </div>
+        <div class="five">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/daguan.jpg"></p>
+            <p class="text_center">大观圣作之碑</p>
+        </div>
+        <div class="six">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/menzi.jpg"></p>
+            <p class="text_center">驴肉焖子</p>
+        </div>
+        <div class="seven">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/yongtongqiao.jpeg"></p>
+            <p class="text_center">永通桥公园</p>
+        </div>
+        <div class="eight">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/bailin.jpeg"></p>
+            <p class="text_center">柏林禅寺</p>
+        </div>
+        <div class="nine">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/xuehuali.jpg"></p>
+            <p class="text_center">雪花梨</p>
+        </div>
+        <div class="ten">
+            <p class="img_100 margin_bottom_15"><img src="/home/iamges/guchengqiang.jpg"></p>
+            <p class="text_center">南门古城墙</p>
+        </div>
+    </div>
+    <!-- 文字特效 -->
+    <div class="htmleaf-container">
+        <div class="demo" style="min-height:100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-effect">
+                            <span>赵</span>
+                            <span>县</span>
+                            <span>欢</span>
+                            <span>迎</span>
+                            <span>您</span>
+                            <span>！</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/home/js/commom.js"></script>
+    <script src="/home/js/zhaozhou.js"></script>
+    <script src="/home/js/current_a.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>特产购--注册界面</title>
+    <link rel="stylesheet" href="/home/specialty_purchase/css/base.css">
+    <link rel="stylesheet" href="/home/specialty_purchase/css/register.css">
+    <script src="/home/specialty_purchase/js/jquery.min.js"></script>
+    <script src="/home/specialty_purchase/js/register.js"></script>
+
+</head>
+
+<body>
+    <div class="w">
+        <!-- header -->
+        <div class="header">
+            <div class="logo">
+                <a href="/home/specialty_purchase/index">
+                    <img src="/home/specialty_purchase/images/logo.jpg" alt="">
+                </a>
+
+            </div>
+
+        </div>
+        <!-- register-area -->
+        <div class="register-area">
+            <h3>注册新用户
+                <em>我有账号，去<a href="/home/specialty_purchase/html/login">登录</a></em>
+            </h3>
+            <div class="reg-form">
+                <form action="/admin/register" method="post">
+                    <ul>
+                        <li>
+                            <label for="tel">手机号:</label>
+                            <input type="text" class="inp" id="tel" name="phonenumber">
+
+                            <span>
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <label for="email">邮箱:</label>
+                            <input type="text" class="inp" name="email" id="email">
+                            <span>
+
+                            </span>
+                        </li>
+                        <li>
+                            <label for="psd">登录密码:</label>
+                            <input type="password" name="password" class="inp" id="psd" />
+                            <span>
+                                密码只能包含字母、数字和下划线
+                            </span>
+                        </li>
+                        <li class="safe">
+                            安全程度
+                            <em class="ruo">弱</em>
+                            <em class="zhong">中</em>
+                            <em class="qiang">强</em>
+                        </li>
+                        <li>
+                            <label for="cpsd">确认密码:</label>
+                            <input type="password" name="checkpassword" class="inp" id="cpsd" />
+                            <span class="">
+                               
+                            </span>
+                        </li>
+                        <li>
+                            <label for="cpsd">支付密码:</label>
+                            <input type="password" name="pay_psd" class="inp" id="pay_psd" />
+                            <span>
+                               密码必须由6位数字组成
+                            </span>
+
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox" checked="checked">同意并注册
+                            <a href="javascript:;">《用户协议须知》</a>
+                        </li>
+                        <li>
+                            <input type="submit" value="完成注册" class="finish">
+                        </li>
+
+                    </ul>
+                </form>
+                <p class="error_message">{{message}}</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="mod-copyright">
+            <p class="mod-copyright-info">
+                地址：河北省石家庄市栾城区卓达太阳城阳光大道 电话：15256065722 E-mail：2239341763@qq.com
+                <br> 京ICP备08002416号京公网安备110120119114
+            </p>
+
+        </div>
+    </div>
+    <script>
+        //获取到注册成功后，提示三秒后转登录界面
+        if ($(".error_message").text() == '注册成功！2s后跳转到登录界面') {
+            setTimeout(function() {
+                location.href = "/home/specialty_purchase/html/login";
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+/*
+* @Author: hzw
+* @Date:   2020-01-07 18:46:11
+ * @Last Modified by: hzw
+ * @Last Modified time: 2020-04-14 02:00:11
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.head {
+    height: 180px;
+    background: url(../iamges/background.jpg) repeat center;
+}
+
+.banner {
+    margin: 3px auto;
+    text-align: center;
+}
+
+.banner a {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    font: 16px "weiruan yahei";
+    color: #fff;
+    background: url(../iamges/navbg1.png) no-repeat;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.banner a:hover {
+    background-image: url(../iamges/navbgc2.png);
+}
+
+
+/* main开始 */
+
+.main {
+    width: 100%;
+    height: 1000px;
+    /* background-color: pink; */
+    background: #43C6AC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F8FFAE, #43C6AC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F8FFAE, #43C6AC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+}
+
+.left {
+    width: 25%;
+    height: 1000px;
+    /* background-color: orange; */
+}
+
+.main li.current {
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.middle {
+    width: 50%;
+    height: 1000px;
+    /* background-color: skyblue; */
+}
+
+
+/*中间盒子--10个子盒子，设置第一个显示，其余隐藏*/
+
+.middle div {
+    width: 100%;
+    height: 1000px;
+    /* background-color: green; */
+    display: none;
+}
+
+.middle p {
+    font-family: SimSun;
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 52px;
+    /* font-weight: 700; */
+}
+
+.middle .current {
+    display: block;
+}
+
+
+/*中间盒子--10个子盒子，设置第一个显示，其余隐藏*/
+
+.right {
+    width: 25%;
+    height: 1000px;
+    /* background-color: red; */
+}
+
+.left,
+.middle,
+.right {
+    float: left;
+}
+
+.left ul,
+.right ul {
+    width: 100%;
+    height: 1000px;
+}
+
+.left li,
+.right li {
+    height: 20%;
+}
+
+.main li h3 {
+    display: inline-block;
+    width: 52px;
+    height: 100%;
+    writing-mode: vertical-lr;
+    /*文字垂直书写*/
+    text-align: center;
+    line-height: 52px;
+}
+
+.left img,
+.right img {
+    height: 152px;
+    width: 260px;
+    margin: 24px 0;
+}
+
+
+/* footer */
+
+
+/* .footer a {
+    font: 16px "weiruan yahei";
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+} */
+
+
+/* .footer a:hover {
+    color: red;
+} */

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特产购--支付界面</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="特产购-石家庄特产，给您最健康的特产！" />
+    <meta name="keywords" content="特产购，赵州雪梨，藁城宫面，赞皇金丝枣" />
+    <!-- 引入网页favicon网页图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/base.css" />
+    <!-- 引入公共样式文件 -->
+    <!-- <link rel="stylesheet" href="/home/specialty_purchase/css/common.css" /> -->
+
+
+    <style>
+        * {
+            font-family: '宋体';
+        }
+        
+        body {
+            background-color: #EFF0F1;
+        }
+        
+        .header {
+            height: 50px;
+            background-color: #fff;
+            border-bottom: 1px solid #d7d8d8;
+            box-shadow: 0 1px 1px #ddd;
+            margin-bottom: 1px;
+        }
+        
+        .header-container {
+            width: 950px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        
+        .header-title {
+            float: left;
+            padding-top: 10px;
+            padding-right: 15px;
+        }
+        
+        .header .logo {
+            width: 88px;
+            height: 30px;
+            float: left;
+            position: relative;
+            font: normal 24px/30px Microsoft YaHei, SimSun;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .logo s {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-image: url(/home/specialty_purchase/upload/zhifubao.png);
+        }
+        
+        .logo-title {
+            font: normal 18px/26px Microsoft YaHei, SimSun;
+            border-left: 1px solid gray;
+            color: #1a1a1a;
+            float: left;
+            padding-left: 10px;
+            margin-top: 2px;
+        }
+        
+        .header-right {
+            float: right;
+            margin-top: 17px;
+            overflow: hidden;
+        }
+        
+        .header-right li {
+            padding: 0 10px;
+            margin-right: -1px;
+            float: left;
+        }
+        /* 主体 */
+        
+        .container {
+            margin: 0 auto;
+            width: 950px;
+            margin-bottom: 20px;
+        }
+        
+        .erweima {
+            float: left;
+        }
+        
+        .order-wraper {
+            position: relative;
+            padding-top: 15px;
+            padding-left: 125px;
+            min-height: 96px;
+        }
+        
+        .order-title,
+        .order-sell {
+            height: auto;
+            line-height: 25px;
+            padding-left: 20px;
+        }
+        
+        .order-title {
+            width: 600px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-top: 15px;
+        }
+        
+        .order-amount {
+            position: absolute;
+            top: 40px;
+            right: 51px;
+        }
+        
+        .order-amount em {
+            color: #ff8208;
+            font-weight: 700;
+            font-size: 22px;
+        }
+        
+        .main-container {
+            border-bottom: 3px solid #a6a6a6;
+            border-top: 3px solid #a6a6a6;
+            padding: 20px;
+            height: 355px;
+            margin-top: 25px;
+            background-color: #fff;
+        }
+        
+        .fukuan-method {
+            height: 140px;
+            /* background-color: pink; */
+        }
+        
+        .huabei {
+            position: relative;
+            height: 65px;
+            border: 3px solid #85A1D4;
+        }
+        
+        .radio {
+            position: absolute;
+            left: 23px;
+            top: 28px;
+        }
+        
+        .ico {
+            position: absolute;
+            left: 70px;
+            top: 21px;
+            line-height: 20px;
+        }
+        
+        .after-huabei {
+            font-size: 14px;
+        }
+        
+        .recommend {
+            position: absolute;
+            left: 180px;
+            top: 25px;
+        }
+        
+        .recommend span {
+            background-color: #29ab91;
+            font-size: 12px;
+            color: #fff;
+            font-family: "微软雅黑";
+        }
+        
+        .total {
+            position: absolute;
+            top: 23px;
+            right: 30px;
+        }
+        
+        .total span {
+            color: #ff8208;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        .qita {
+            height: 45px;
+            margin-top: 10px;
+            /* background-color: pink; */
+        }
+        
+        .qita-first,
+        .qita-add {
+            width: 170px;
+            height: 45px;
+            float: left;
+            background-color: #fff;
+        }
+        
+        .qita-first:hover,
+        .qita-add:hover {
+            background-color: #0088CC;
+            color: #fff;
+        }
+        
+        .qita-first {
+            text-align: center;
+            color: #00BDF5;
+            border: 1px solid #ccc;
+            line-height: 45px;
+        }
+        
+        .qita-add {
+            text-align: center;
+            color: #00BDF5;
+            border: 1px dashed #ccc;
+            margin-left: 10px;
+            line-height: 45px;
+        }
+        
+        .anjian {
+            /* background-color: pink; */
+            margin: 30px 0;
+        }
+        /* 支付密码 */
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .clearfix:before,
+        .clearfix:after {
+            content: " ";
+            display: table;
+        }
+        
+        .alieditContainer {
+            position: relative;
+        }
+        
+        .sixDigitPassword {
+            position: absolute;
+            left: -122px;
+            top: 0;
+            width: 1000px;
+            height: 26px;
+            color: #fff;
+            font-size: 12px;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            -webkit-user-select: initial;
+            outline: 'none';
+            z-index: 999;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+        
+        .sixDigitPassword-box {
+            cursor: text;
+            background: #fff;
+            outline: none;
+            position: relative;
+            padding: 8px 0;
+            height: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 2px;
+        }
+        
+        .sixDigitPassword-box i {
+            float: left;
+            display: block;
+            padding: 4px 0;
+            height: 7px;
+            border-left: 1px solid #cccccc;
+        }
+        
+        .sixDigitPassword-box .active {
+            background: url(/home/specialty_purchase/images/password-blink.gif) no-repeat center center;
+        }
+        
+        .sixDigitPassword-box b {
+            display: block;
+            margin: 0 auto;
+            width: 7px;
+            height: 7px;
+            overflow: hidden;
+            visibility: hidden;
+            background: url(/home/specialty_purchase/images/passeord-dot.png) no-repeat;
+        }
+        
+        .sixDigitPassword-box span {
+            position: absolute;
+            display: block;
+            left: 0px;
+            top: 0px;
+            height: 30px;
+            border: 1px solid rgba(82, 168, 236, .8);
+            border: 1px solid #00ffff/10;
+            border-radius: 2px;
+            visibility: hidden;
+            -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.75), 0 0 8px rgba(82, 168, 236, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+        }
+        
+        .ui-securitycore .ui-form-item .ui-form-explain {
+            margin-top: 8px;
+        }
+        
+        .i-block {
+            display: inline-block;
+            font-size: 14px;
+        }
+        
+        .six-password {
+            position: relative;
+            height: 33px;
+            width: 182px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+        
+        .submit {
+            width: 128px;
+            height: 40px;
+            background-color: #00AAEE;
+            color: #fff;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 3px 3px 3px 3px;
+            border-color: #00AAEE;
+            border: none;
+            outline: none;
+            margin-top: 15px;
+        }
+        
+        .submit:hover {
+            background-color: #089DD6;
+        }
+        /* footer */
+        
+        .footer {
+            text-align: center;
+        }
+        
+        .partner {
+            text-align: center;
+            padding: 20px 0 40px;
+        }
+        
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-title">
+                <span class="logo">
+                    支付宝
+                    <s></s>
+                </span>
+                <span class="logo-title">我的收银台</span>
+            </div>
+            <ul class="header-right">
+                <li class="account-id">
+                    支付宝账户:
+                    <span>{{userInfo.phonenumber}}</span>
+                </li>
+                <li>唯一热线：95188</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="order">
+            <div class="erweima">
+                <img src="/home/specialty_purchase/upload/fukuanma.jpg" alt="" width="125" height="125">
+            </div>
+            <div class="order-wraper">
+                <div class="order-title">特产购---仿淘宝虚拟支付效果，继续学习知识</div>
+                <div class="order-sell">卖家昵称：特产购</div>
+                <div class="order-amount">
+                    <em>{{data.final_total}}</em>元
+                </div>
+            </div>
+
+        </div>
+        <div class="main-container">
+            <div class="fukuan-method">
+                <ul class="huabei">
+                    <li class="radio"><input type="radio" checked="checked"></li>
+                    <li class="ico">
+                        <img class="ico-pic" src="/home/specialty_purchase/upload/huabei.png" alt="">
+                        <span class="after-huabei">花呗</span>
+                    </li>
+
+                    <li class="recommend"><span>推荐</span></li>
+
+                    <li class="total">
+                        支付
+                        <span>{{data.final_total}}</span>元
+                    </li>
+                </ul>
+                <div class="qita">
+                    <div class="qita-first">其他付款方式</div>
+                    <div class="qita-add">添加快捷/网银付款</div>
+                </div>
+            </div>
+            <div class="anjian">
+                <img src="/home/specialty_purchase/images/success.png" width="20" height="20" alt=""> 安全设置检测成功！无需短信校验。
+            </div>
+            <form action="/admin/zhifu-psd" method="post" name="payPassword">
+                <div id="payPassword_container" class="alieditContainer clearfix" data-busy="0">
+                    <div><label for="i_payPassword" class="i-block">支付宝支付密码：</label></div>
+
+                    <div class="i-block" data-error="i_error">
+                        <div class="i-block six-password">
+                            <input class="i-text sixDigitPassword" id="payPassword_rsainput" type="password" autocomplete="off" required="required" value="" name="payPassword_rsainput" data-role="sixDigitPassword" tabindex="" maxlength="6" minlength="6" aria-required="true">
+                            <div tabindex="0" class="sixDigitPassword-box" style="width: 180px;">
+                                <i style="width: 29px; border-color: transparent;" class=""><b style="visibility: hidden;"></b></i>
+                                <i style="width: 29px;"><b style="visibility: hidden;"></b></i>
+                                <i style="width: 29px;"><b style="visibility: hidden;"></b></i>
+                                <i style="width: 29px;"><b style="visibility: hidden;"></b></i>
+                                <i style="width: 29px;"><b style="visibility: hidden;"></b></i>
+                                <i style="width: 29px;"><b style="visibility: hidden;"></b></i>
+                                <span style="width: 29px; left: 0px; visibility: hidden;" id="cardwrap" data-role="cardwrap"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <span style="color:#B2B2B2">请输入6位数字支付密码</span> </br>
+
+                            <span class="error">{{err}}</span>
+                        </div>
+
+                    </div>
+                </div>
+                <input type="submit" class="submit" value="确认付款">
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        ICP证：冀A2-20200415
+    </div>
+    <div class="partner">
+        <img src="/home/specialty_purchase/upload/partner.png" alt="">
+    </div>
+</body>
+
+<script src="/home/specialty_purchase/js/jquery-1.8.3.min.js"></script>
+<script src="/home/specialty_purchase/js/jquery-validate.js"></script>
+<script>
+    //var _formPay = $('#form_paypsw');
+
+    // _formPay.validate({
+    //     rules: {
+    //         'payPassword_rsainput': {
+    //             'minlength': 6,
+    //             'maxlength': 6,
+    //             required: true,
+    //             digits: true,
+    //             numPassword: true,
+    //             echoNum: true
+    //         }
+    //     },
+
+    //     messages: {
+    //         'payPassword_rsainput': {
+    //             'required': '<i class="icon icon-attention icon-lg"></i>&nbsp;请填写支付密码',
+    //             'maxlength': '<i class="icon icon-attention icon-lg"></i>&nbsp;密码最多为{0}个字符',
+    //             'minlength': '<i class="icon icon-attention icon-lg"></i>&nbsp;密码最少为{0}个字符',
+    //             'digits': '<i class="icon icon-attention icon-lg"></i>&nbsp;密码只能为数字',
+    //             'numPassword': '<i class="icon icon-attention icon-lg"></i>&nbsp;连号不可用，相同数字不可用（如：123456）',
+    //             'echoNum': '<i class="icon icon-attention icon-lg"></i>&nbsp;连号不可用，相同数字不可用（如：123456，）'
+    //         }
+    //     },
+    //     errorPlacement: function(error, element) {
+    //         element.closest('div[data-error="i_error"]').append(error);
+    //     },
+    //     submitHandler: function(form) {
+    //         var _form = $(form);
+    //         form.submit();
+
+    //     }
+    // });
+
+    var payPassword = $("#payPassword_container"),
+        _this = payPassword.find('i'),
+        k = 0,
+        j = 0,
+        password = '',
+        _cardwrap = $('#cardwrap');
+    //点击隐藏的input密码框,在6个显示的密码框的第一个框显示光标
+    payPassword.on('focus', "input[name='payPassword_rsainput']", function() {
+
+        var _this = payPassword.find('i');
+        if (payPassword.attr('data-busy') === '0') {
+            //在第一个密码框中添加光标样式
+            _this.eq(k).addClass("active");
+            _cardwrap.css('visibility', 'visible');
+            payPassword.attr('data-busy', '1');
+        }
+
+    });
+    //change时去除输入框的高亮，用户再次输入密码时需再次点击
+    payPassword.on('change', "input[name='payPassword_rsainput']", function() {
+        _cardwrap.css('visibility', 'hidden');
+        _this.eq(k).removeClass("active");
+        payPassword.attr('data-busy', '0');
+    }).on('blur', "input[name='payPassword_rsainput']", function() {
+
+        _cardwrap.css('visibility', 'hidden');
+        _this.eq(k).removeClass("active");
+        payPassword.attr('data-busy', '0');
+
+    });
+
+    //使用keyup事件，绑定键盘上的数字按键和backspace按键
+    payPassword.on('keyup', "input[name='payPassword_rsainput']", function(e) {
+
+        var e = (e) ? e : window.event;
+
+        //键盘上的数字键按下才可以输入
+        if (e.keyCode == 8 || (e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+            k = this.value.length; //输入框里面的密码长度
+            l = _this.size(); //6
+
+            for (; l--;) {
+
+                //输入到第几个密码框，第几个密码框就显示高亮和光标（在输入框内有2个数字密码，第三个密码框要显示高亮和光标，之前的显示黑点后面的显示空白，输入和删除都一样）
+                if (l === k) {
+                    _this.eq(l).addClass("active");
+                    _this.eq(l).find('b').css('visibility', 'hidden');
+
+                } else {
+                    _this.eq(l).removeClass("active");
+                    _this.eq(l).find('b').css('visibility', l < k ? 'visible' : 'hidden');
+
+                }
+
+                if (k === 6) {
+                    j = 5;
+                } else {
+                    j = k;
+                }
+                $('#cardwrap').css('left', j * 30 + 'px');
+
+            }
+        } else {
+            //输入其他字符，直接清空,也就是不显示
+            var _val = this.value;
+            this.value = _val.replace(/\D/g, '');
+        }
+    });
+</script>
+
+
+</html>

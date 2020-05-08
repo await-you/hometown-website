@@ -1,0 +1,158 @@
+/*
+ * @Author: hzw 
+ * @Date: 2020-02-16 00:24:35 
+ * @Last Modified by: hzw
+ * @Last Modified time: 2020-02-25 21:26:14
+ */
+
+.container {
+    margin-top: 50px;
+}
+
+.preview {
+    width: 400px;
+    height: 500px;
+}
+
+.preview-img {
+    width: 398px;
+    height: 398px;
+    border: 1px solid #ccc;
+}
+
+.iteminfo-wrap {
+    width: 718px;
+}
+
+.sku-name {
+    height: 35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+}
+
+.summary dl {
+    overflow: hidden;
+}
+
+.summary dt {
+    width: 80px;
+    padding-left: 10px;
+    line-height: 36px;
+}
+
+.summary-price,
+.summary-promotion {
+    background-color: #fee9eb;
+    padding: 10px 0;
+}
+
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+
+.summary-promotion {
+    padding: 0;
+}
+
+.summary-promotion dd {
+    line-height: 33px;
+}
+
+.choose-unit a {
+    display: inline-block;
+    width: 80px;
+    height: 41px;
+    border: 1px solid #ededed;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 41px;
+    margin-top: 20px;
+}
+
+.choose-unit dt {
+    margin-top: 20px;
+}
+
+.choose-gift {
+    margin: 20px 0 30px;
+}
+
+.choose-gift a {
+    display: inline-block;
+    width: 100px;
+    height: 41px;
+    border: 1px solid #ededed;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 41px;
+}
+
+.summary a.current,
+.summary a.current,
+.summary a.current {
+    border-color: #c81623;
+}
+
+.choose-btn {
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+.choose-amount {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 46px;
+}
+
+.choose-amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.add,
+.reduce {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.add {
+    top: 0;
+}
+
+.reduce {
+    bottom: 0;
+    /* cursor: not-allowed; */
+}
+
+.add-car {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.choose-btn .add-car:hover {
+    color: #fff;
+}

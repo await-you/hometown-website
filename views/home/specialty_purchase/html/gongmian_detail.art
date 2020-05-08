@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="特产购-石家庄特产，给您最健康的特产！" />
+    <meta name="keywords" content="特产购，赵州雪梨，藁城宫面，赞皇金丝枣" />
+    <title>特产购--藁城宫面详情页面</title>
+    <!-- 引入网页favicon网页图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/base.css" />
+    <!-- 引入公共样式文件 -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/common.css" />
+    <!-- 皇冠detail -->
+    <link rel="stylesheet" href="/home/specialty_purchase/css/gongmian.css">
+    <!-- 引入jquery -->
+    <script src="/home/specialty_purchase/js/jquery.min.js"></script>
+    <script src="/home/specialty_purchase/js/common_d.js"></script>
+</head>
+
+<body>
+    <!-- shortcut start -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>特产购欢迎您！</li>
+                    <li>
+                        <a href="/home/specialty_purchase/html/login">请登录</a>
+                        <a href="/home/specialty_purchase/html/register" class="style-red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="#">我的特产购</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="javascript:;" class="customer_id">{{userInfo ? userInfo._id:'未登录'}}</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- shortcut end -->
+
+    <!-- header start -->
+    <div class="header w">
+        <div class="logo">
+            <h1>
+                <a href="/home/specialty_purchase/index" title="特产购">特产购</a>
+            </h1>
+        </div>
+        <!-- <div class="search">
+            <input type="text" class="text" value="请输入搜索内容...">
+            <button class="btn">搜索</button>
+        </div>
+        <ul class="search_list" id="search_list">
+
+        </ul> -->
+        <div class="shopcar">
+            <a href="/admin/cart-list"><i class="car">&#xe65c;</i>&nbsp;&nbsp;我的购物车<i class="arrow">&#xe62d;</i></a>
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- 全部商品分类开始 -->
+    <div class="underline">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">全部商品分类</div>
+                <div class="dd" style="display: none;">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/jinsizao_detail">赞皇金丝枣</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/gongmian_detail">藁城宫面</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/luji_detail">正定马家卤鸡</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/hetao_detail">平山绵核桃</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/xiangchun_detail">鹿泉香椿</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/xigua_detail">新乐西瓜</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/shizi_detail">元氏大红袍柿子</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/home/specialty_purchase/html/yali_detail">晋州鸭梨</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 全部商品分类结束 -->
+    <!-- 详情页开始 -->
+    <div class="container w">
+        <div class="product-intro clearfix">
+            <div class="preview fl">
+                <div class="preview-img">
+                    <img src="../upload/gongmian-d.jpg" alt="" class="good-src">
+                </div>
+            </div>
+            <div class="iteminfo-wrap fr">
+                <div class="sku-name">
+                    藁城宫面，耐火而不糟，回锅而不烂，值得购买！
+                </div>
+                <div class="summary">
+                    <dl class="summary-price">
+                        <dt>价格</dt>
+                        <dd><i class="price">￥10元/把</i></dd>
+                    </dl>
+                    <dl class="summary-promotion">
+                        <dt>促销</dt>
+                        <dd>藁城宫面促销，满10把送1把，多购还有其他优惠</dd>
+                    </dl>
+                    <!-- <dl class="choose-size">
+                        <dt>选择大小</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">42号</a>
+                            <a href="javascript:;">45号</a>
+                            <a href="javascript:;">48号</a>
+                            <a href="javascript:;">60号</a>
+                        </dd>
+                    </dl> -->
+                    <!-- <dl class="choose-unit">
+                        <dt>购买单位</dt>
+                        <dd>
+                            <a href="javascript:;">5把</a>
+                            <a href="javascript:;" class="current">10把</a>
+                            <a href="javascript:;">15把</a>
+                            <a href="javascript:;">20把</a>
+                        </dd>
+                    </dl> -->
+                    <dl class="choose-gift">
+                        <dt>赠品(二选一)</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">特色宫灯1个</a>
+                            <a href="javascript:;">宫面调味料1袋</a>
+
+                        </dd>
+                    </dl>
+                    <div class="choose-btn">
+                        <div class="choose-amount">
+                            <input type="text" value="1" id="txt">
+                            <a href="javascript:;" class="add">+</a>
+                            <a href="javascript:;" class="reduce">-</a>
+                        </div>
+                        <a href="javascript:;" class="add-car">加入购物车</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- footer start -->
+    <div class="footer">
+        <div class="w">
+            <!-- 保证模块start -->
+            <div class="mod-guarantee">
+                <ul>
+                    <li>
+                        <i class="mod-guarantee-item zheng">&#xe639;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>正品保证</h5>
+                            <p>绝对正宗特产</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item tuihuan">&#xe603;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>七天包退</h5>
+                            <p>七天无理由退换</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item bao">&#xe63e;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>全国包邮</h5>
+                            <p>满88包邮</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item pei">&#xe600;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>假一赔三</h5>
+                            <p>承诺赔款</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-guarantee-item smile">&#xe688;</i>
+                        <div class="mod-guarantee-tit">
+                            <h5>微笑服务</h5>
+                            <p>竭诚为您服务</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 保证模块end -->
+            <!-- mod_copyright start -->
+            <div class="mod-copyright">
+                <p class="mod-copyright-info">
+                    地址：河北省石家庄市栾城区卓达太阳城阳光大道 电话：15256065722 E-mail：2239341763@qq.com
+                    <br> 京ICP备08002416号京公网安备110120119114
+                </p>
+
+            </div>
+            <!-- mod_copyright end -->
+
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+
+
+
+<script src="/home/specialty_purchase/js/add-car.js"></script>
+
+</html>
